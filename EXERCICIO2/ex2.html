@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <h1>Exercício 2</h1>
+    <form action="ex2.php" method="get">
+        <fieldset>
+            <legend>Informações</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="recado">Deixe seu recado</label>
+            <br>
+            <textarea name="area" id="recado" cols="20" rows="10"></textarea>
+            <br>
+            <label for="opcao">Escolha as opções</label>
+            <br>
+            <label for="cine">Cinema</label>
+            <input type="checkbox" name="cine" id="cine" value="cinema">
+            <label for="esporte">Esporte</label>
+            <input type="checkbox" name="esporte" id="esporte" value="esporte">
+            <label for="jogos">Jogos</label>
+            <input type="checkbox" name="jogos" id="jogos" value="jogos">
+            <br>
+            <br>
+            <label>Escolha seu gênero</label>
+            <input type="radio" name="genero" id="masculino" value="masc">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="feminino" value="fem">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="outros" value="outros">
+            <label for="outros">Outros</label>
+            <br>
+            <br>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="uf">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+                <option value="ES">ES</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Apagar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
