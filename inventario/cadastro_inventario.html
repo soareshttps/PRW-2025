@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro Inventário</title>
+</head>
+<body>
+
+  <h2>Cadastro de Computador</h2>
+  
+  <form action="cadastro_inventario.php" method="post">
+    Código Patrimônio: <input type="text" name="cod" required><br>
+    Descrição: <input type="text" name="desc" required><br>
+    Marca: <input type="text" name="marca" required><br>
+    Modelo: <input type="text" name="modelo" required><br>
+    Armazenamento (MB): <input type="number" name="arma" required><br>
+    Memória (MB): <input type="number" name="mem" required><br>
+    Processador: <input type="text" name="proc" required><br>
+    Possui Placa de Vídeo? 
+    <select name="plv">
+      <option value="1">Sim</option>
+      <option value="0">Não</option>
+    </select><br>
+    Descrição Placa de Vídeo: <input type="text" name="descplv"><br>
+    Sistema Operacional: <input type="text" name="so" required><br>
+    <input type="submit" value="Cadastrar">
+  </form>
+</body>
+</html>
