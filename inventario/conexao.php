@@ -2,7 +2,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$senha = "";
+$senha = "ifsp";
 $banco = "ifsp_inventario";
 
 $conn = new mysqli($host, $user, $senha, $banco);

@@ -1,0 +1,14 @@
+body
+{
+  background-color: rgb(114, 169, 218);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+li
+{
+  
+}
