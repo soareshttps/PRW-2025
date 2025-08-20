@@ -36,22 +36,22 @@ include 'conexao.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome=$_POST['nome'] ?? '';
     $email=$_POST['email'] ?? '';
-    $idade=$_POST['idade'] ?? '';
+    $senha=$_POST['senha'] ?? '';
     $curso=$_POST['curso'] ?? '';
-    if ($nome && $email && $idade && $curso)
+    if ($nome && $email && $senha && $curso)
     {
 
         echo "<h1>Dados Recebidos</h1><br>";
         echo "Nome: $nome <br>";
         echo "Email: $email <br>";
-        echo "Idade: $idade <br>";
+        echo "Idade: $senha <br>";
         echo "Curso: $curso <br>";
     } else {
         echo "Todos os Campos São Obrigatórios";
     }
 
 
-    $sql = "INSERT INTO usuario (nome, email, idade, curso) VALUES ('$nome', '$email', '$idade', '$curso')";
+    $sql = "INSERT INTO usuario (nome, email, senha, curso) VALUES ('$nome', '$email', '$senha', '$curso')";
 
     if (mysqli_query($conn, $sql)) {
         echo "Novo registro criado com sucesso";
@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <div>
-    <a href="index.html">Menu Principal</a>
+    <a href="index.php">Menu Principal</a>
 </div>
 
 

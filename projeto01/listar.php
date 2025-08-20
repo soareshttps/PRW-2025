@@ -60,7 +60,7 @@ include 'conexao.php';
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Email</th>
-                    <th>Idade</th>
+                    <th>Senha</th>
                     <th>Curso</th>
                     <th>Ação</th>
                 </tr>
@@ -72,7 +72,7 @@ include 'conexao.php';
                     echo "<td>".$row['id']."</td>";
                     echo "<td><a href='altera_usuario.php?id=".$row['id']."'>".$row['nome']."</a></td>";
                     echo "<td>".$row['email']."</td>";
-                    echo "<td>".$row['idade']."</td>";
+                    echo "<td>".$row['senha']."</td>";
                     echo "<td>".$row['curso']."</td>";
                     echo "<td><a href='excluir_usuario.php?id=".$row['id']."'>Excluir</a></td>";
                     echo "</tr>";

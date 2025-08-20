@@ -7,6 +7,7 @@ create table Usuario
 	id int auto_increment,
     nome varchar(50),
     email varchar(50),
+    senha varchar(50),
     telefone varchar (30),
     curso varchar(2),    
     primary key (id)
